@@ -1,0 +1,15 @@
+<Avatar
+  @title={{@avatarTitle}}
+  @initial={{@avatarInitial}}
+  @isActive={{@userIsActive}}
+  class="{{if @isCurrentUser "current-user"}}"
+/>
+<section>
+  <Username
+    @name={{@username}}
+    @localTime={{@userLocalTime}}
+  />
+  {{yield}}
+ 
+</section>
+

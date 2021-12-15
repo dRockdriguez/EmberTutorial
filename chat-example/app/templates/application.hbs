@@ -5,3 +5,12 @@
 
   <NewMessageInput />
 </div>
+
+<BlogPost @post={{@blogPost}} as |postTitle postAuthor postBody|>
+  {{postTitle}}
+
+  {{postBody}}
+
+  {{postAuthor}}
+
+</BlogPost>
