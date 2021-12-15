@@ -1,5 +1,5 @@
-<form>
-  <input id="message" />
+<form {{on "submit" this.createMessage}}>
+  <Input @value={{this.message}} />
   <button type="submit">
     Send
   </button>
